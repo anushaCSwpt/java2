@@ -1,0 +1,142 @@
+Public class Ticket {
+
+    Private String ticketNumber;
+
+    Private String passengerName;
+
+    Private String destination;
+
+    Private double price;
+
+
+
+    // Constructor
+
+    Public Ticket(String ticketNumber, String passengerName, String destination, double price) {
+
+        This.ticketNumber = ticketNumber;
+
+        This.passengerName = passengerName;
+
+        This.destination = destination;
+
+        This.price = price;
+
+    }
+
+
+
+    // Setter methods
+
+    Public void setTicketNumber(String ticketNumber) {
+
+        This.ticketNumber = ticketNumber;
+
+    }
+
+
+
+    Public void setPassengerName(String passengerName) {
+
+        This.passengerName = passengerName;
+
+    }
+
+
+
+    Public void setDestination(String destination) {
+
+        This.destination = destination;
+
+    }
+
+
+
+    Public void setPrice(double price) {
+
+        This.price = price;
+
+    }
+
+
+
+    // Getter methods
+
+    Public String getTicketNumber() {
+
+        Return ticketNumber;
+
+    }
+
+
+
+    Public String getPassengerName() {
+
+        Return passengerName;
+
+    }
+
+
+
+    Public String getDestination() {
+
+        Return destination;
+
+    }
+
+
+
+    Public double getPrice() {
+
+        Return price;
+
+    }
+
+
+
+    // Method to print ticket details
+
+    Public void printTicketDetails() {
+
+        System.out.println(“Ticket Number: “ + ticketNumber);
+
+        System.out.println(“Passenger Name: “ + passengerName);
+
+        System.out.println(“Destination: “ + destination);
+
+        System.out.println(“Price: “ + price);
+
+    }
+
+
+
+    // Main method for demonstration
+
+    Public static void main(String[] args) {
+
+        // Creating an instance of the Ticket class
+
+        Ticket ticket = new Ticket(“”, “”, “”, 0);
+
+
+
+        // Setting ticket details
+
+        Ticket.setTicketNumber(“123456”);
+
+        Ticket.setPassengerName(“John Doe”);
+
+        Ticket.setDestination(“New York”);
+
+        Ticket.setPrice(150);
+
+
+
+        // Displaying ticket details
+
+        Ticket.printTicketDetails();
+
+    }
+
+}
+
