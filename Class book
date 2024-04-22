@@ -1,0 +1,43 @@
+public class Book {
+    private String title;
+    private String author;
+
+    // Default constructor
+    public Book() {
+        this.title = "";
+        this.author = "";
+    }
+
+    // Method to set title
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    // Method to get title
+    public String getTitle() {
+        return this.title;
+    }
+
+    // Method to set author
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    // Method to get author
+    public String getAuthor() {
+        return this.author;
+    }
+
+    public static void main(String[] args) {
+        // Instantiate object of the Book class using the default constructor
+        Book book1 = new Book();
+
+        // Set the title to "Data Structures" and author to "David Brown"
+        book1.setTitle("Data Structures");
+        book1.setAuthor("David Brown");
+
+        // Retrieve and print the attributes
+        System.out.println("Title: " + book1.getTitle());
+        System.out.println("Author: " + book1.getAuthor());
+    }
+}
